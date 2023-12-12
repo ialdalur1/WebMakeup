@@ -1,0 +1,19 @@
+<polymer-element name="geolocation-wrapper" extends="current-location" attributes="longitude latitude width height">
+ <template>
+  <content></content>
+   <template if="{{longitude!=null&&latitude!=null}}">
+       <google-maps zoom="12" type="hybrid" width="{{width}}" height="{{height}}" latitude="{{latitude}}" longitude="{{longitude}}"></google-maps>
+   </template>
+   <template if="{{position!=null&&longitude==null&&latitude==null}}">	 	 
+    <current-location position="{{position}}"></current-location>
+    <template if="{{position}}">
+     <google-maps zoom="12" type="hybrid" width="{{width}}" height="{{height}}" latitude="{{position.coords.latitude}}" longitude="{{position.coords.longitude}}"></google-maps>
+    </template>
+   </template>
+ </template>
+ <script>
+   Polymer('geolocation-wrapper', {
+     applyAuthorStyles: true
+   });
+ </script>
+</polymer-element>

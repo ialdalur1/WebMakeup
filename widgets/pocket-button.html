@@ -1,0 +1,51 @@
+<polymer-element name="pocket-button" attributes="count lang save-url align">
+
+  <script>
+    Polymer('pocket-button', {
+      'count'   : 'none',
+      'lang'    : 'en',
+      'save-url': '',
+      'align'   : 'left',
+      created: function(){
+        this.onCreated();
+      },
+      onCreated: function(){
+        this.createBtn();
+        this.loadLib();
+      },
+      loadLib: function(){
+        var d = document,
+            i = 'pocket-btn-js',
+            j = d.createElement("script"),
+            w;
+        if(!d.getElementById(i)){
+          j.id=i;
+          j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";
+          w = d.getElementById(i);
+          d.body.appendChild(j);
+        }
+      },
+      createBtn: function(){
+        var d = document,
+            label = 'pocket',
+            cls = 'pocket-btn',
+            count = this.count,
+            lang = this.lang,
+            url = this['save-url'],
+            align = this.align,
+            a = d.createElement('a');
+
+        a.setAttribute('data-pocket-label', label);
+        a.setAttribute('data-pocket-count', count);
+        a.setAttribute('class', cls);
+        a.setAttribute('data-lang', lang);
+        a.setAttribute('data-pocket-align', align);
+        if(url!=''){
+          a.setAttribute('data-save-url', url);
+        }
+        d.body.appendChild(a);
+      }
+    });
+  </script>
+
+</polymer-element>

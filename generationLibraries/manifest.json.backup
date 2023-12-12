@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "Augmentation",
+	"description": "...",
+	"version": "0.1",
+
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"css" : ["style.css"],
+			"js": ["cjs.js", "jquery.js", "xpath.js", "htmlclipper.js", "anchors.js", "animation.js", "augmentation.js", "webmakeup.js"]
+		},
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"css" : ["style.css"]
+		}
+	],
+
+	"permissions": [],
+	"web_accessible_resources": []
+}

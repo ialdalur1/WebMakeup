@@ -1,0 +1,32 @@
+.WireIt-Terminal {
+	/*margin: 20px 8px;*/
+	margin: 0;
+}
+
+.WireIt-Wire {
+	z-index: 9997 !important;
+	pointer-events: none;
+}
+.WireIt-Wire-Label {
+	z-index: 10000 !important;
+}
+.WireIt-Wire-scissors {
+	z-index: 10000 !important;	
+}
+.WireIt-Terminal {
+	z-index: 10000 !important;
+	right: 0px !important;
+}
+.inputEx-InPlaceEdit-editor{
+	background-color:rgb(255,255,153);
+}
+
+.inputEx-InPlaceEdit-visu{
+	/*cursor: url("http://downloads.totallyfreecursors.com/cursor_files/mouseclick.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/mouse-click.gif"), auto;
+	 cursor: pointer;
+	 cursor: context-menu;
+	*/
+	background-color : white;
+	border: 2px solid black;
+	cursor: copy;	
+}

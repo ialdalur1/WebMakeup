@@ -1,0 +1,301 @@
+
+[data_wmwidget_id] {
+/*	height: 100%;
+    width: 100%; 
+    padding: 0.5em;
+    min-height: 6em;*/
+    border: 5px solid #000 !important;
+    border: 5px solid rgba(0,0,0,0.5) !important;
+    box-sizing:border-box;
+    display: inline-block; 
+    z-index: 9999;  
+    position: relative !important;
+/*    top: 20%;
+    left: 50%;*/
+}
+
+#foreignClones{
+	height: 95vh;
+	overflow-x: scroll !important;
+	overflow-y: scroll !important;
+}
+
+span.wm_select {
+    display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border: 5px solid #0C0;
+    border: 5px solid rgba(0,204,0,1); /* rgba(0,191,255,0.5); */
+    border-radius: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+span.wm_close {
+    display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border: 5px solid #F00;
+    border: 5px solid rgba(255,0,0,1); /* rgba(0,191,255,0.5); */
+    border-radius: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+span.wm_undo {
+    display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border: 5px solid #FF0;
+    border: 5px solid rgba(255,255,0,1); /* rgba(0,191,255,0.5); */
+    border-radius: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+span.wm_hide {
+    display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border: 5px solid #0C0;
+    border: 5px solid rgba(0,204,0,1); /* rgba(0,191,255,0.5); */
+    border-radius: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+span.wm_download {
+    display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border: 5px solid #000;
+    border: 5px solid rgba(0,0,0,1); /* rgba(0,191,255,0.5); */
+    border-radius: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+span.wm_spark {
+    display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    width: 7em !important;
+    height: 1em !important;
+    text-align: center;
+    line-height: 1em !important;
+    border: 5px solid #0C0;
+    border: 5px solid rgba(0,204,0,1);
+  /*  border-radius: 2em;*/
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.wm_ventana.wm_clickNormal{
+	display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    text-align: center;
+    overflow: hidden; 
+    z-index: 999998;
+	/* white-space: nowrap;
+	color: transparent;*/
+	background-color: #AAAAAA !important;
+}
+
+.wm_foreingnWidget {
+	position:fixed; 
+	display:block !important; 
+	/*top: 40% !important;
+	left:40% !important;*/
+	z-index:9999999999 !important;
+}
+
+.wm_imageForeign{
+	display:none;
+}
+
+.wm_imageForeignText{
+	position:fixed; 
+	display:none;
+	font-family:Arial, Helvetica, sans-serif; 
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 10px;
+	/*top: 40% !important;
+	left:40% !important;*/
+	background-color:#C0C0C0;
+	z-index:9999999999 !important;
+}
+
+.wm_ventana.wm_clickMoveMode{
+	display: none;
+    position: absolute;
+    top: -100.5em;
+    left: -100.5em;
+    text-align: center;
+    overflow: hidden; 
+    z-index: 999998;
+	/* white-space: nowrap;
+	color: transparent;*/
+	background-color: #CC0000 !important;
+}
+
+.wm_deselected{
+	/*color: grey;*/
+	background-color: rgba(177, 166, 166, 0.5) !important;
+	opacity:0.4 !important;
+}
+
+[data_wmwidget_state=collapse]{
+	text-indent: -9999px; 
+	height: 2em !important;
+	overflow: hidden; 
+	white-space: nowrap;
+	color: transparent;
+	
+  /*  position: absolute !important;
+	clip:rect(20px,20px,0px,0px);
+	color: rgba(0,0,0,0);
+	position: relative;
+	 margin: 0 auto;
+	 clip: rect(1px, 1px, 1px, 1px);
+	 clip: rect(0 0 0 0);
+	visibility: hidden;
+	opacity:0;*/
+}
+
+/*.wm_background{
+	background:green !important;
+}*/
+
+.wm_background:not(#extruderBottom):not(#extruderLeft):not(.w_close):not(.wm_spark) {
+	background:green !important;
+}
+.wm_background:not(#extruderBottom):not(#extruderLeft):not(.w_close):not(.wm_spark) *{
+	background:green !important;
+}
+
+::shadow .wm_background{
+	background:green !important;
+}
+
+.wm_backgroundForeign{
+	background:green !important;
+}
+.wm_backgroundForeign *{
+	background:green !important;
+}
+[data_wmwidget_type=original_widgetized]{
+	display: none !important;
+}
+
+[data_wmwidget_widgetized_deleted=true]{
+	display: none !important;
+}
+
+[data_wmwidget_flip=true]{
+	width: auto !important;
+    height: auto !important; 
+}
+
+/*Style for widgets menu*/
+#extruderLeft > *
+{
+	font-size: 12px;
+}
+
+.foreignCloneToolButton{
+	width:100%;
+}
+
+.foreignCloneToolButtonDelete img{
+	width:16px;
+	padding-top:10px;
+}
+.foreignCloneToolButtonDelete{
+	position: relative;
+	float: right;
+	right: -22px;
+	margin-top: -32px;
+}
+
+.resizable {
+    resize: both;   /* Options: horizontal, vertical, both */
+    overflow: auto; /* fix for Safari */
+}
+
+.wm_patronButoon{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.wm_rawhtml{
+	width: 300px;
+	height: 50px;
+}
+
+#wm_htmlEditorDiv{
+	display:none;
+}
+
+[wm_ajaxProblem=true] {
+	/*border: 5px solid red !important;*/
+	 background: rgba(255,0,0,1)    /* 40% opaque red */
+	/*position: relative;
+     top: 0;
+    left: 0;
+   width: 100%;
+    height: 100%;
+	z-index: 999998 !important;
+  background-color: rgba(0,0,0,0.5) !important;
+  opacity: 0.9;*/
+}
+
+[wm_jsProblem=true] {
+	border: 5px solid blue !important;
+	background: rgba(0,255,0,1)    /* 40% opaque green */
+/*	position: relative;
+	z-index: 999998 !important;
+  background-color: rgba(0,255,0,0.3) !important;
+  opacity: 0.1;*/
+}
+
+
+
+/*[data_wmwidget_type=foreignCloned]{
+	border: 15px solid #000 !important;
+    border: 15px solid rgba(0,0,0,0.5) !important;
+}*/

@@ -1,0 +1,28 @@
+.activo{
+	width: 100%;
+}
+
+.inactivo{
+	display: none;
+	
+}
+
+.foreignCloneToolButtonDelete{
+	position: absolute;
+	float: right;
+	right: 2px;
+	/*margin-top: -32px;*/
+}
+
+.foreignCloneToolButtonDelete img{
+	width:16px;
+	padding-top:10px;
+}
+
+/*.wm_project{
+	width:100%
+}
+
+#project{
+	
+}*/
